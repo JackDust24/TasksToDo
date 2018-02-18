@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E43A12C20394E0800A8EF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A12B20394E0800A8EF43 /* AppDelegate.swift */; };
-		9E43A12E20394E0800A8EF43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A12D20394E0800A8EF43 /* ViewController.swift */; };
+		9E43A12E20394E0800A8EF43 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A12D20394E0800A8EF43 /* ToDoViewController.swift */; };
 		9E43A13120394E0800A8EF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E43A12F20394E0800A8EF43 /* Main.storyboard */; };
 		9E43A13420394E0800A8EF43 /* TasksToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A13220394E0800A8EF43 /* TasksToDo.xcdatamodeld */; };
 		9E43A13620394E0800A8EF43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E43A13520394E0800A8EF43 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		9E43A12820394E0800A8EF43 /* TasksToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E43A12B20394E0800A8EF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E43A12D20394E0800A8EF43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E43A12D20394E0800A8EF43 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		9E43A13020394E0800A8EF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E43A13320394E0800A8EF43 /* TasksToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TasksToDo.xcdatamodel; sourceTree = "<group>"; };
 		9E43A13520394E0800A8EF43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				9E43A12B20394E0800A8EF43 /* AppDelegate.swift */,
-				9E43A12D20394E0800A8EF43 /* ViewController.swift */,
+				9E43A12D20394E0800A8EF43 /* ToDoViewController.swift */,
 				9E43A12F20394E0800A8EF43 /* Main.storyboard */,
 				9E43A13520394E0800A8EF43 /* Assets.xcassets */,
 				9E43A13720394E0800A8EF43 /* LaunchScreen.storyboard */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E43A12E20394E0800A8EF43 /* ViewController.swift in Sources */,
+				9E43A12E20394E0800A8EF43 /* ToDoViewController.swift in Sources */,
 				9E43A12C20394E0800A8EF43 /* AppDelegate.swift in Sources */,
 				9E43A13420394E0800A8EF43 /* TasksToDo.xcdatamodeld in Sources */,
 			);
@@ -279,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUFCY3UFR6;
 				INFOPLIST_FILE = TasksToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.TasksToDo;
@@ -293,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EUFCY3UFR6;
 				INFOPLIST_FILE = TasksToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jason.TasksToDo;
