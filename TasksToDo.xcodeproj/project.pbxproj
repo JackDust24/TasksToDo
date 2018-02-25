@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		1D623B3BAFC7878443691E9D /* Pods_TasksToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B455275A91A56D2A3530EBFA /* Pods_TasksToDo.framework */; };
 		9E032DF4203F9E550072A0B5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E032DF3203F9E550072A0B5 /* CategoryViewController.swift */; };
+		9E387FFA2041387600A62DB8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E387FF92041387600A62DB8 /* Category.swift */; };
 		9E43A12C20394E0800A8EF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A12B20394E0800A8EF43 /* AppDelegate.swift */; };
 		9E43A12E20394E0800A8EF43 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A12D20394E0800A8EF43 /* ToDoViewController.swift */; };
 		9E43A13120394E0800A8EF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E43A12F20394E0800A8EF43 /* Main.storyboard */; };
-		9E43A13420394E0800A8EF43 /* TasksToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E43A13220394E0800A8EF43 /* TasksToDo.xcdatamodeld */; };
 		9E43A13620394E0800A8EF43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E43A13520394E0800A8EF43 /* Assets.xcassets */; };
 		9E43A13920394E0800A8EF43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E43A13720394E0800A8EF43 /* LaunchScreen.storyboard */; };
+		9EA01A8C20426D6E00FFF0DD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA01A8B20426D6E00FFF0DD /* Item.swift */; };
 		9EBB940520399D17006FE759 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB940420399D16006FE759 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -22,14 +23,15 @@
 		167085454B6900BEDC6FA0B3 /* Pods-TasksToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksToDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasksToDo/Pods-TasksToDo.debug.xcconfig"; sourceTree = "<group>"; };
 		48ED65D8112B0F8D0B98BB50 /* Pods-TasksToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasksToDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasksToDo/Pods-TasksToDo.release.xcconfig"; sourceTree = "<group>"; };
 		9E032DF3203F9E550072A0B5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		9E387FF92041387600A62DB8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		9E43A12820394E0800A8EF43 /* TasksToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E43A12B20394E0800A8EF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E43A12D20394E0800A8EF43 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		9E43A13020394E0800A8EF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9E43A13320394E0800A8EF43 /* TasksToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TasksToDo.xcdatamodel; sourceTree = "<group>"; };
 		9E43A13520394E0800A8EF43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E43A13820394E0800A8EF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E43A13A20394E0800A8EF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA01A8B20426D6E00FFF0DD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9EBB940420399D16006FE759 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B455275A91A56D2A3530EBFA /* Pods_TasksToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasksToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,7 +86,6 @@
 				9E032DF3203F9E550072A0B5 /* CategoryViewController.swift */,
 				9E43A12F20394E0800A8EF43 /* Main.storyboard */,
 				9E43A13520394E0800A8EF43 /* Assets.xcassets */,
-				9E43A13220394E0800A8EF43 /* TasksToDo.xcdatamodeld */,
 				9E43A14220398E4500A8EF43 /* Models */,
 			);
 			path = TasksToDo;
@@ -93,6 +94,8 @@
 		9E43A14220398E4500A8EF43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9EA01A8B20426D6E00FFF0DD /* Item.swift */,
+				9E387FF92041387600A62DB8 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,10 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA01A8C20426D6E00FFF0DD /* Item.swift in Sources */,
+				9E387FFA2041387600A62DB8 /* Category.swift in Sources */,
 				9E032DF4203F9E550072A0B5 /* CategoryViewController.swift in Sources */,
 				9E43A12E20394E0800A8EF43 /* ToDoViewController.swift in Sources */,
 				9E43A12C20394E0800A8EF43 /* AppDelegate.swift in Sources */,
-				9E43A13420394E0800A8EF43 /* TasksToDo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,19 +439,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9E43A13220394E0800A8EF43 /* TasksToDo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9E43A13320394E0800A8EF43 /* TasksToDo.xcdatamodel */,
-			);
-			currentVersion = 9E43A13320394E0800A8EF43 /* TasksToDo.xcdatamodel */;
-			path = TasksToDo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9E43A12020394E0700A8EF43 /* Project object */;
 }
