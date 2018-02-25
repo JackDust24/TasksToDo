@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class ToDoViewController: SwipeTableViewController {
     
@@ -28,7 +29,7 @@ class ToDoViewController: SwipeTableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // Just want to print where it is storing
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        // print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         
     }
 
@@ -52,6 +53,14 @@ class ToDoViewController: SwipeTableViewController {
         if let item = toDoItems?[indexPath.row] {
             
             cell.textLabel?.text = item.title
+            
+            let categoryColour = UIColor(hexString: selectedCategory!.cellColor)
+            
+            if let colour = categoryColour?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(toDoItems!.count)) {
+                cell.backgroundColor = colour
+                // Contrast colours depending if dark or white.
+                cell.textLabel?.textColor = ContrastColorOf(colour, returnFlat: true)
+            }
             
             cell.accessoryType = item.done ? .checkmark : .none
             

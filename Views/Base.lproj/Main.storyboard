@@ -33,7 +33,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Category" id="OEZ-mm-EHP">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="aZ6-w7-h6A">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aZ6-w7-h6A">
                             <connections>
                                 <action selector="addButtonPressed:" destination="7vh-B5-Bm3" id="cpr-64-MrS"/>
                             </connections>
@@ -80,7 +80,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To Do List" id="0rf-sJ-XJf">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="lRp-w7-e5o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lRp-w7-e5o">
                             <connections>
                                 <action selector="addButtonPressed:" destination="1i1-aR-oUP" id="Ygc-nN-1oH"/>
                             </connections>
@@ -96,8 +96,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RuY-Cx-YAg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w3i-Lj-gVx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="w3i-Lj-gVx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                     </navigationBar>
