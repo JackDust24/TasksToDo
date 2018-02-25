@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class CategoryViewController: UITableViewController {
+class CategoryViewController: SwipeTableViewController {
     
     let realm = try! Realm()
     
@@ -21,6 +21,8 @@ class CategoryViewController: UITableViewController {
         super.viewDidLoad()
 
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        
+        tableView.rowHeight = 80.0
 
         loadCategory()
     }
@@ -38,10 +40,16 @@ class CategoryViewController: UITableViewController {
         
     }
     
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! SwipeTableViewCell
+//        cell.delegate = self
+//        return cell
+//    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         print("CellRow")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         cell.textLabel?.text = categoryArray?[indexPath.row].name ?? "No Category yet"
         
@@ -128,6 +136,24 @@ class CategoryViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func updateModel(at indexPath: IndexPath) {
+
+        if let categoryRow = self.categoryArray?[indexPath.row] {
+
+            do {
+                try self.realm.write {
+                    self.realm.delete(categoryRow) // if I wanted to delete it.
+                    // self.categoryArray.delete(at: [indexPath.row])
+                }
+            } catch {
+                print("Error saving done status - \(error)")
+            }
+
+            // tableView.reloadData()
+
+        }
+    }
+    
 //    func loadCategory(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
 //
 ////        print("LOAD CATEGORY")
@@ -146,3 +172,5 @@ class CategoryViewController: UITableViewController {
 
 
 }
+
+
